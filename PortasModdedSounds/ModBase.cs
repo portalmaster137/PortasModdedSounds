@@ -11,10 +11,11 @@ namespace PortasModdedSounds
     {
         void RegisterPatch();
     }
+    [BepInPlugin(GUID, NAME, VERSION)]
     public class ModBase : BaseUnityPlugin
     {
         private const string GUID = "com.porta137.portamoddedsounds";
-        private const string NAME = "FunnyJackNoise";
+        private const string NAME = "PortaModdedSounds";
         private const string VERSION = "1.0.0";
         public Harmony harmony = new Harmony(GUID);
         public static ModBase Instance;
